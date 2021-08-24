@@ -1,0 +1,22 @@
+header {
+  color: blue;
+}
+
+.description-prev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media all and (max-width: ) {
+  .description-prev {
+    width: 400px;
+  }
+}
+
+.todo-prev {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */

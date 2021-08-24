@@ -1,0 +1,6 @@
+.description-prev{
+    @include flex;    
+    justify-content: center;
+    align-items: center;
+    @include mobile-only;
+}
