@@ -1,0 +1,16 @@
+.restaurant-prev{
+    @include flex;
+    justify-content: center;
+    align-items: space-around;
+    width: 90%;
+    background-color: white;
+    border-radius: 30px;
+
+    &__img img{
+        object-fit: cover;
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+
+    }
+}

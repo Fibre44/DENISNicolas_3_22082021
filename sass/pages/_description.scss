@@ -1,5 +1,6 @@
 .description-prev{
-    @include flex;    
+    @include flex;
+    background-color: $background-color;    
     justify-content: center;
     align-items: center;
     @include mobile-only;
