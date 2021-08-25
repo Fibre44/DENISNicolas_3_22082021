@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "SHRIKHAND";
+  src: url(./../vendors/shrikhand/Shrikhand-Regular.otf);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "SHRIKHAND";
+}
+
+span, p {
+  font-family: "Roboto";
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -26,6 +38,10 @@
 .footer__informations footer__informations--italic {
   font-style: italic;
 }
+.footer__informations a {
+  color: white;
+  text-decoration: none;
+}
 
 .conteneur {
   background-color: #F2F2F2;
@@ -36,6 +52,11 @@
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 425px) {
+  .conteneur {
+    width: 425px;
+  }
+}
 
 .description-prev {
   display: flex;
@@ -43,6 +64,11 @@
   background-color: #F2F2F2;
   justify-content: center;
   align-items: center;
+}
+.description-prev__btn {
+  background-color: #FF79DA;
+  color: white;
+  border-radius: 30px;
 }
 @media screen and (max-width: 425px) {
   .description-prev {
@@ -53,6 +79,45 @@
 .todo-prev {
   display: flex;
   flex-direction: column;
+  height: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+.todo-prev__title {
+  align-self: flex-start;
+}
+.todo-prev__task {
+  width: 90%;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+  height: 30px;
+}
+.todo-prev__task__number {
+  border-radius: 30px;
+  background-color: #9356DC;
+}
+@media screen and (max-width: 425px) {
+  .todo-prev {
+    width: 425px;
+  }
+}
+
+.location-prev {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location-prev__logo {
+  margin-right: 5px;
+}
+@media screen and (max-width: 425px) {
+  .location-prev {
+    width: 425px;
+  }
 }
 
 .restaurant-prev {
@@ -60,15 +125,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: space-around;
-  width: 90%;
   background-color: white;
   border-radius: 30px;
+  width: 90%;
 }
 .restaurant-prev__img img {
   object-fit: cover;
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+}
+.restaurant-prev__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.restaurant-prev__infos h6 {
+  margin-bottom: 0px;
+}
+.restaurant-prev__infos p {
+  margin-top: 0px;
+}
+.restaurant-prev__infos__favoris {
+  position: relative;
+  left: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */

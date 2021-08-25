@@ -1,4 +1,28 @@
-.todo-prev{
-    @include flex;
+.todo-prev{    
+    @include flex-column;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    &__title{
+        align-self: flex-start;
+
+    }
+    &__task{
+        width: 90%;
+        background-color: $background-color;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 30px;
+        height: 30px;      
+        
+        &__number{
+            border-radius: 30px;
+            background-color: $primaire;
+            
+        }
+
+    }
+    @include mobile-only;
 
 }

@@ -1,7 +1,13 @@
 .description-prev{
-    @include flex;
+    @include flex-column;
     background-color: $background-color;    
     justify-content: center;
     align-items: center;
+    &__btn {
+        background-color: $secondaire;
+        color: white;
+        border-radius: 30px;
+    }
     @include mobile-only;
+
 }
