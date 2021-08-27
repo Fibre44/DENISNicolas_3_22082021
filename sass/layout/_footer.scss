@@ -1,25 +1,21 @@
-.footer{
-    @include flex-column;
-    align-items: flex-start;
-    background-color: black;
+footer {
+    background-color: #353535;
+    padding: 25px;
     color: white;
-
-    & ul {
-        margin-left: 0px;
+    &__informations p {
+      font-style: italic;
     }
+  }
 
-    &__informations {
-
-        & footer__informations--italic{
-            font-style: italic;
-       }
-
-       & a {
-           color: white;
-           text-decoration: none;
-       }
+    ul {
+      list-style-type: none;
+  
+      li {
+        padding: 5px 0 5px 0;
+  
+        a {
+          color: white;
+        }
+      }
 
     }
-
-
-}

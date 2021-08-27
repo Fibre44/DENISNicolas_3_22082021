@@ -12,50 +12,115 @@ span, p {
 
 .header {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .header__logo {
   width: 50%;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 @media screen and (max-width: 425px) {
   body {
     width: 425px;
   }
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: black;
+footer {
+  background-color: #353535;
+  padding: 25px;
   color: white;
 }
-.footer ul {
-  margin-left: 0px;
-}
-.footer__informations footer__informations--italic {
+footer__informations p {
   font-style: italic;
 }
-.footer__informations a {
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  padding: 5px 0 5px 0;
+}
+ul li a {
   color: white;
-  text-decoration: none;
+}
+
+.menu-prev {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 30px;
+  width: 90%;
+}
+.menu-prev__title {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.menu-prev div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.menu-prev__price {
+  font-weight: bold;
 }
 
 .conteneur {
   background-color: #F2F2F2;
   width: 100%;
-  height: 2000px;
+  height: 1500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 @media screen and (max-width: 425px) {
   .conteneur {
     width: 425px;
   }
+}
+.conteneur__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: italic;
+  font-weight: bold;
+  width: 90%;
+}
+.conteneur__byline {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  text-decoration: none;
+}
+.conteneur__underline {
+  width: 15%;
+  height: 2px;
+  background-color: #99E2D0;
+}
+.conteneur__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+.picture-prev__img img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .description-prev {
@@ -64,11 +129,6 @@ span, p {
   background-color: #F2F2F2;
   justify-content: center;
   align-items: center;
-}
-.description-prev__btn {
-  background-color: #FF79DA;
-  color: white;
-  border-radius: 30px;
 }
 @media screen and (max-width: 425px) {
   .description-prev {
@@ -150,6 +210,22 @@ span, p {
 .restaurant-prev__infos__favoris {
   position: relative;
   left: 300px;
+}
+
+.btn {
+  background: linear-gradient(70deg, #9356DC, #FF79DA);
+  /*https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Images/Using_CSS_gradients*/
+  color: white;
+  border-radius: 30px;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons i {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

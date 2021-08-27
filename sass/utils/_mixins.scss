@@ -9,3 +9,10 @@
         width: 425px;
     }   
 }
+
+@mixin marge-left__marge-right {
+
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
