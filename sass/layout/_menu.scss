@@ -1,0 +1,30 @@
+.menu-prev{
+    @include flex-column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 30px;
+    width: 90%;
+
+    &__title{
+        @include marge-left__marge-right;
+        font-weight: bold;
+        margin-bottom: 0px;
+
+    }
+    
+    div{
+        display:  flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include marge-left__marge-right;
+
+
+    }
+
+    &__price{
+        font-weight: bold;
+    }
+
+}

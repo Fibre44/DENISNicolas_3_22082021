@@ -1,0 +1,11 @@
+.btn {
+    background: linear-gradient(70deg,$primaire ,$secondaire);
+    /*https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Images/Using_CSS_gradients*/
+    color: white;
+    border-radius: 30px;
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
