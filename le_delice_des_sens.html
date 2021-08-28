@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./public/css/style.css">
-        <link href="./sass/vendors/fontawesome-free-5.15.3-web/" rel="stylesheet">
+        <link href="./sass/vendors/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width">
         <title>Ohmyfood</title>
     </head>
@@ -11,14 +11,23 @@
     <body>
                 
         <header class="header">
-            <img class="header__logo" src="./public/img/ohmyfood.png" alt="">
-            <div class="header__nav"><a href="./index.html"></a></div>
+            <div class="header__nav"><a href="./index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i></a></div>
+            <h1 class="header__title">ohmyfood</h1>
         </header>
 
+        <aside class="picture-prev">
+            <div class="picture-prev__img">
+                <img src="./public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+            </div>
+        </aside>
+
+
+
         <main class="conteneur">
+
             <div class="conteneur__title">
                 <h6>Le délice des sens</h6>
-                <div>heart</div>
+                <div class="icons"><i class="fill far fa-heart fa-2x" ></i></div>
             </div>
             <div class="conteneur__heading">
                 <p class="conteneur__byline">ENTREES</p>
@@ -95,13 +104,9 @@
                     <p class="menu-prev__price">23€</p>
                 </div>
             </section>
-            <div class=conteneur__btn>Commander</div>
-
-
+            <div class="btn">Commander</div>
 
         </main>
-
-
 
         <footer class="footer">
             <ul>

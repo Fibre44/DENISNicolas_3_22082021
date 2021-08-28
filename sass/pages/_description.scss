@@ -1,6 +1,6 @@
 .description-prev{
     @include flex-column;
-    background-color: $background-color;    
+    background-color: #f6f6f6;    
     justify-content: center;
     align-items: center;
     @include mobile-only;

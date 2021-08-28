@@ -1,5 +1,6 @@
 .menu-prev{
     @include flex-column;
+    @include shadow;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: white;
@@ -11,6 +12,10 @@
         font-weight: bold;
         margin-bottom: 0px;
 
+    }
+
+    &__byline{
+        text-overflow: ellipsis;
     }
     
     div{
