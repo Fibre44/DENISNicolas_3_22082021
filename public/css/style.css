@@ -91,7 +91,6 @@ ul li a {
   align-items: center;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  z-index: 2;
   position: relative;
   margin-top: -50px;
 }
@@ -133,7 +132,6 @@ ul li a {
 .picture-prev__img img {
   object-fit: cover;
   width: 100%;
-  z-index: 1;
 }
 
 .description-prev {
