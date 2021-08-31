@@ -11,6 +11,7 @@ span, p {
   font-family: "Roboto";
 }
 
+/*loader*/
 .header {
   display: flex;
   justify-content: space-around;
@@ -127,6 +128,8 @@ ul li a {
 .conteneur--height--border {
   height: 2000px;
   border-radius: 0px;
+  margin-top: 50px;
+  z-index: 1;
 }
 
 .picture-prev__img img {
@@ -165,6 +168,12 @@ ul li a {
   align-items: center;
   border-radius: 30px;
   height: 80px;
+}
+.todo-prev__task:hover {
+  background-color: #f2eafb;
+}
+.todo-prev__task:hover i {
+  color: #9356DC;
 }
 .todo-prev__task__number {
   border-radius: 50%;
@@ -247,6 +256,51 @@ ul li a {
 
 .icons i {
   color: black;
+}
+
+.load {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 2;
+}
+.load__bar {
+  background-color: #15DEA5;
+  height: 100%;
+  width: 3vh;
+  animation: bars 1000ms backwards alternate ease-in-out;
+  animation-iteration-count: 5;
+  animation-delay: 3s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+.load__bar--1 {
+  animation-delay: 200ms;
+}
+.load__bar--2 {
+  animation-delay: 400ms;
+}
+.load__bar--3 {
+  animation-delay: 600ms;
+}
+.load__bar--4 {
+  animation-delay: 800ms;
+}
+.load__bar--5 {
+  animation-delay: 1000ms;
+}
+
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+    display: none;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
