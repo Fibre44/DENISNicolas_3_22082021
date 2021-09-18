@@ -1,4 +1,11 @@
 
+/*loader*/
+$cd-bars: #15DEA5;
+$size: 3vh;
+$num-bars: 5;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / $num-bars;
+
 .load {
     position: fixed;
     width: 100%;

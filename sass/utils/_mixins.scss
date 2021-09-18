@@ -6,30 +6,82 @@
 
 @mixin mobile-only {
     @media screen and (max-width : map-get($breakpoints, mobile )){
-        width: map-get($breakpoints, mobile );
+        @content;
     }   
 }
 
 @mixin tablet-only {
     @media screen and (max-width : map-get($breakpoints, tablet )){
-        width: map-get($breakpoints, tablet );
+        @content;
     }   
 }
 
-@mixin laptot-only {
+@mixin laptop-only {
     @media screen and (max-width : map-get($breakpoints, laptop )){
-        width: map-get($breakpoints, laptop );
+        @content;
     }   
+}
+
+@mixin laptop-restaurants  {
+    @media screen and (max-width : map-get($breakpoints, laptop )){
+        height: map-get($conteneur, laptop-height-index);
+        width: 100%;        
+    }   
+}
+
+@mixin mobile-restaurants  {
+    @media screen and (max-width : map-get($breakpoints, mobile )){
+        flex-wrap: nowrap;
+        height: map-get($conteneur, mobile-height-index);
+        width: 100%;
+    }   
+}
+
+@mixin laptop-restaurant  {
+    @media screen and (max-width : map-get($breakpoints, laptop )){
+        width: map-get($restaurants , laptop-witch ); 
+    }   
+}
+@mixin mobile-restaurant  {
+    @media screen and (max-width : map-get($breakpoints, mobile )){
+        width: map-get($restaurants , mobile-witch );      
+ 
+    }   
+}
+
+@mixin laptop-todo-task {
+    @media screen and (max-width : map-get($breakpoints, laptop )){
+        width: 25%;
+    }
+    
+}
+
+@mixin mobile-todo-task {
+    @media screen and (max-width : map-get($breakpoints, mobile )){
+        width: 85%;
+    }
+    
+}
+
+@mixin mobile-description {
+    @media screen and (max-width : map-get($breakpoints, mobile )){
+        height: 200px;
+    }
+    
 }
 
 @mixin marge-left__marge-right {
-
     margin-left: 5%;
-    margin-right: 5%;
-    
+    margin-right: 5%;    
 }
 
 @mixin shadow {
 
     box-shadow: 1px 2px 8px 2px #c4c4c4;    
+}
+
+@mixin number ($device) {
+    @each $state, $list in lists {
+        margin-left: map-get($number, $device);        
+    }    
 }

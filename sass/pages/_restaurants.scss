@@ -6,6 +6,8 @@
     border-radius: 30px;
     width: 90%;
     @include shadow;
+    @include laptop-restaurant;
+    @include mobile-restaurant;
 
 
     &__img img{
@@ -29,7 +31,7 @@
 
         &__favoris{
             position: relative;
-            left: 300px;
+            left: 80%;
         }
 
     }

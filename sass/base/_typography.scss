@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Shrikhand";
-    src: url(./../vendors/shrikhand/Shrikhand-Regular.otf);
+    src: url(./../../sass/vendors/shrikhand/Shrikhand-Regular.otf);
+    /*attention prendre le chemin relatif depuis le fichier css dans public*/
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, .footer__informations:nth-child(1){
     font-family: "Shrikhand";
-    font-weight: bold;
 }
 
-span,p{
+h2,h6,span,p{
     font-family: "Roboto";
 }
