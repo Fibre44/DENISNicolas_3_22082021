@@ -8,6 +8,14 @@ footer {
   }
 
     ul {
+      @include laptop-only{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      };
+      @include mobile-only{
+        @include flex-column;
+      };
       list-style-type: none;
   
       li {

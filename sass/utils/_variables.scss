@@ -2,4 +2,43 @@ $primaire : #9356DC;
 $secondaire : #FF79DA;
 $tertiaire : #99E2D0;
 $background-color : #F2F2F2;
-$breakpoints:425px;
+$breakpoints:(
+    mobile: 425px,
+    tablet: 768px,
+    laptop: 2560px
+);
+
+$restaurants:(
+    mobile-witch: 90%,
+    laptop-witch: 30%
+);
+
+$conteneur:(
+    mobile-height-index : 2000px,
+    laptop-height-index : 1000px    
+);
+
+$todo:(
+    mobile-witch: 90%,
+    laptop-witch: 30%
+);
+
+$desciption:(
+    mobile-height: 200px,
+    laptop-height: 200px
+);
+/*
+$number:(
+    mobile-margin-left: -45px,
+    tablet-margin-left: -15px,
+    laptop-margin-left: -30px,    
+);
+*/
+
+$number:(
+    mobile: -40px,
+    tablet: -15px,
+    laptop: -30px,    
+);
+
+

@@ -5,28 +5,39 @@
         <link rel="stylesheet" href="./public/css/style.css">
         <link href="./sass/vendors/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width">
+        <meta name="description" contente="Restaurants Ohmyfood">         
         <title>Ohmyfood</title>
     </head>
 
-    <body>
-        <div class="loader"></div>
+    <body>        
+        <!--Loader   
+
+        <div class="load">
+            <div class="load__bar load__bar--1"></div>
+            <div class="load__bar load__bar--2"></div>
+            <div class="load__bar load__bar--3"></div>
+            <div class="load__bar load__bar--4"></div>
+            <div class="load__bar load__bar--5"></div>
+        </div>
+        --> 
+        
         <header class="header">
             <h1>Ohmyfood</h1>
         </header>
 
         <aside class="location-prev">
             <div class="location-prev__logo"><i class="fas fa-map-marker-alt"></i></div>
-            <h6 class="location-prev__city">Paris,Belleville</h6>
+            <h2 class="location-prev__city">Paris,Belleville</h2>
         </aside>
 
         <section class="description-prev">
-            <h1 class="description-prev__heading">Réservez le menu qui vous convient</h1>
+            <h2 class="description-prev__heading">Réservez le menu qui vous convient</h2>
             <p class="description-prev__byline">Découvrez des restaurants d'exeption, séléctionnés par nos soins</p>
             <div class="btn">Explorer nos restaurant</div>
         </section>
 
         <section class="todo-prev">
-            <h1 class="todo-prev__title">Fonctionnement</h1>
+            <h2 class="todo-prev__title">Fonctionnement</h2>
             <article class="todo-prev__task">
                 <div class="todo-prev__task__number">1</div>
                 <div><i class="fas fa-mobile-alt"></i></div>
@@ -45,29 +56,30 @@
         </section>
 
         <main class="conteneur conteneur--height--border">
-            <h6 class=contenur__title>Restaurants</h6>
+            <h2 class=contenur__title>Restaurants</h2>
+            <div class=conteneur__contents>
             <section class="restaurant-prev" onclick="location.href='la_palette_du_gout.html'">
                 <div class="restaurant-prev__img"><img src="./public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt=""></div>
                 <article class="restaurant-prev__infos">
-                    <h6 class="restautant-prev__infos__name">La palette du goût</h6>
+                    <h2 class="restautant-prev__infos__name">La palette du goût</h2>
                     <div class="restaurant-prev__infos__favoris"><i class="fill far fa-heart fa-2x"></i></div>
                     <p class="restaurant-prev__infos__city">Ménimontant</p>
-                </article>
-               
+                    <span class="restautant-prev__new">Nouveau</span>
+                </article>               
             </section>
             <section class="restaurant-prev" onclick="location.href='la_note_enchantee.html'">
                 <div class="restaurant-prev__img"><img src="./public/img/stil-u2Lp8tXIcjw-unsplash.jpg" alt=""></div>
                 <article class="restaurant-prev__infos">
-                    <h6 class="restautant-prev__name">La note enchantée</h6>
+                    <h2 class="restautant-prev__name">La note enchantée</h2>
                     <div class="restaurant-prev__infos__favoris"><i class="fill far fa-heart fa-2x"></i></div>
                     <p class="restaurant-prev__city">Charonne</p>
+                    <span class="restautant-prev__new">Nouveau</span>
                 </article>
-
             </section>
             <section class="restaurant-prev" onclick="location.href='a_la_francaise.html'">
                 <div class="restaurant-prev__img"><img src="./public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt=""></div>
                 <article class="restaurant-prev__infos">
-                    <h6 class="restautant-prev__name">A la française</h6>
+                    <h2 class="restautant-prev__name">A la française</h2>
                     <div class="restaurant-prev__infos__favoris"><i class="fill far fa-heart fa-2x"></i></div>
                     <p class="restaurant-prev__city">Cité Rouge</p>
                 </article>
@@ -75,14 +87,13 @@
             <section class="restaurant-prev" onclick="location.href='le_delice_des_sens.html'">
                 <div class="restaurant-prev__img"><img src="./public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt=""></div>
                 <article class="restaurant-prev__infos">
-                    <h6 class="restautant-prev__name">Le délice des sens</h6>
+                    <h2 class="restautant-prev__name">Le délice des sens</h2>
                     <div class="restaurant-prev__infos__favoris"><i class="fill far fa-heart fa-2x"></i></div>
                     <p class="restaurant-prev__city">folie-Méricourt</p>
                 </article>
             </section>
+            </div>
         </main>
-
-
         <footer class="footer">
             <ul>
                 <li class="footer__informations">ohmyfood</li>
@@ -93,6 +104,4 @@
               </ul>  
         </footer>
     </body>
-
-
 </html>
