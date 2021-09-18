@@ -145,6 +145,12 @@ ul li a {
   position: relative;
   margin-top: -50px;
 }
+@media screen and (max-width: 425px) {
+  .conteneur {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .conteneur__title {
   display: flex;
   justify-content: space-between;
@@ -296,16 +302,11 @@ ul li a {
 }
 
 .location-prev {
-  background-color: #eaeaea;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  flex-wrap: nowrap;
-}
-.location-prev__logo {
-  margin-right: 5px;
+  background-color: #F2F2F2;
 }
 
 .restaurant-prev {
