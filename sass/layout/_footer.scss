@@ -1,9 +1,13 @@
 footer {
     background-color: #353535;
-    padding: 25px;
     color: white;
     &__informations p {
       font-style: italic;
+    }
+    @include mobile-only{
+      @include flex-column;
+      align-items: flex-start;
+
     }
   }
 
@@ -12,9 +16,11 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
       };
       @include mobile-only{
         @include flex-column;
+        align-items: flex-start
       };
       list-style-type: none;
   

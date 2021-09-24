@@ -1,7 +1,8 @@
-.todo-prev{    
-    @include flex-column;
+.todo-prev{
+    
+    z-index: 2;
     @include laptop-only{
-        width: map-get($todo , laptop-witch );
+        @include flex-column;
         flex-wrap: wrap;
         height: 100px;
         width: 100%;
@@ -9,7 +10,6 @@
         align-content: space-between;
     }
     @include mobile-only{
-        width: map-get($todo , mobile-witch );
         flex-wrap: no-wrap;
         height: 400px;
         justify-content: space-around;

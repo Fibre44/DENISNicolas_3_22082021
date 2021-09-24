@@ -4,14 +4,19 @@
     height: 1500px;
     justify-content: space-around;
     align-items: center;
-    @include laptop-only;
-    @include mobile-only{
-        @include flex-column
-    };
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     position: relative;
     margin-top: -50px;
+    @include laptop-only{
+        @include flex-column
+    };
+    @include tablet-only{
+        height: 1000px;
+    }
+    @include mobile-only{
+        height: 1500px;
+    }
 
     &__title{
         display: flex;
@@ -50,13 +55,36 @@
         height: 95%;
     }
 
+    &__meals{
+        width: 100%;
+        height: 25%;
+        @include laptop-only{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 5%;
+        }
+        @include mobile-only{
+            @include flex-column;
+            justify-content: space-between;
+            align-items: center;
+            height: 25%;
+        }
+    }
+
     &--height--border{
         border-radius: 0px;
         margin-top: 50px;
         width: 100%;
         z-index: 1;
-        @include laptop-restaurants;
-        @include mobile-restaurants;
+        @include laptop-only{
+            height: 1000px;
+        }
+
+        @include mobile-only{
+            height: 2000px;
+        }
+
         
     }
 

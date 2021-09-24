@@ -6,8 +6,13 @@
     border-radius: 30px;
     width: 90%;
     @include shadow;
-    @include laptop-restaurant;
-    @include mobile-restaurant;
+    @include laptop-only{
+        flex-wrap: nowrap;
+        width: 40%;
+    }
+    @include mobile-only{
+        width: 90%;  
+    }
 
 
     &__img img{
@@ -33,6 +38,24 @@
             position: relative;
             left: 80%;
         }
+
+    }
+    &__text{
+        position: relative;
+        font-weight: bold;
+        @include laptop-only{
+            top:-400px;
+            left: 350px;
+        }
+        @include mobile-only{
+            left: 250px;
+        }
+    &__background-color{
+        height: 50px;
+        width: 100px;  
+        position: relative;
+        background-color: $tertiaire;
+    }
 
     }
 
