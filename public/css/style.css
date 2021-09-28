@@ -11,6 +11,95 @@ h2, h6, span, p, .btn {
   font-family: Roboto, sans-serif;
 }
 
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 1s;
+}
+
+.delay-2 {
+  animation-delay: 2s;
+}
+
+.delay-3 {
+  animation-delay: 3s;
+}
+
+.delay-4 {
+  animation-delay: 4s;
+}
+
+.delay-5 {
+  animation-delay: 5s;
+}
+
+.delay-6 {
+  animation-delay: 6s;
+}
+
+.delay-7 {
+  animation-delay: 7s;
+}
+
+.delay-8 {
+  animation-delay: 8s;
+}
+
+.delay-9 {
+  animation-delay: 9s;
+}
+
+.delay-10 {
+  animation-delay: 10s;
+}
+
+/*Gestion de l'animation pour l'apparition des menus*/
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 1s;
+}
+
+.delay-2 {
+  animation-delay: 2s;
+}
+
+.delay-3 {
+  animation-delay: 3s;
+}
+
+.delay-4 {
+  animation-delay: 4s;
+}
+
+.delay-5 {
+  animation-delay: 5s;
+}
+
+.delay-6 {
+  animation-delay: 6s;
+}
+
+.delay-7 {
+  animation-delay: 7s;
+}
+
+.delay-8 {
+  animation-delay: 8s;
+}
+
+.delay-9 {
+  animation-delay: 9s;
+}
+
+.delay-10 {
+  animation-delay: 10s;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -145,38 +234,43 @@ ul li a {
   transition: 3000ms;
 }
 
-.delay-0 {
-  animation-delay: 1s;
+/*
+.delay-0{
+    animation-delay: 1s;
 }
 
-.delay-1 {
-  animation-delay: 2s;
+.delay-1{
+    animation-delay: 2s;
+
+}
+.delay-2{
+    animation-delay: 3s;
+}
+.delay-3{
+    animation-delay: 4s;
 }
 
-.delay-2 {
-  animation-delay: 3s;
+.delay-4{
+    animation-delay: 5s;
+
+}
+.delay-5{
+    animation-delay: 6s;
+}
+.delay-6{
+    animation-delay: 7s;
 }
 
-.delay-3 {
-  animation-delay: 4s;
+.delay-7{
+    animation-delay: 8s;
+
+}
+.delay-8{
+    animation-delay: 9s;
+
 }
 
-.delay-4 {
-  animation-delay: 5s;
-}
-
-.delay-5 {
-  animation-delay: 6s;
-}
-
-.delay-6 {
-  animation-delay: 7s;
-}
-
-.delay-7 {
-  animation-delay: 8s;
-}
-
+*/
 .conteneur {
   background-color: #F2F2F2;
   width: 100%;
