@@ -1,6 +1,10 @@
-.icons{
+.fa-heart:hover {
+    color: $primaire;
+    cursor: pointer;
+    background-image: linear-gradient(70deg,$primaire ,$secondaire);
+}
+.fa-check-circle{
+    color: white;
+    background: $tertiaire;
 
-    & i{
-        color: black;
-    }
 }

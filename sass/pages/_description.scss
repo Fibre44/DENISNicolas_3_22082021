@@ -2,10 +2,14 @@
     @include laptop-only{
         @include flex-column;
     }
-    background-color: #f6f6f6;    
+    background-color: #fafafa;    
     justify-content: center;
     align-items: center;
-    @include mobile-only;
     z-index: 1;
+    text-align: center;
+    @include mobile-only{
+        padding: 2rem;
+    }
 
+   
 }

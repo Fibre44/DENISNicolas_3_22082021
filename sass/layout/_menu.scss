@@ -20,6 +20,10 @@
     text-overflow: ellipsis;
     animation-name: menu-loader;
     animation-duration: 3000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
+
 
     &__title{
         @include marge-left__marge-right;
@@ -34,7 +38,7 @@
         justify-content: space-between;
         align-items: center;
         margin-left: 5%;
-        width: 80%;
+        width: 90%;
 
     }
 
@@ -42,7 +46,6 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-
     }  
 
     &__price{
@@ -50,15 +53,66 @@
     }
 
     &__validation{
-        width: 10%;
+        visibility: hidden;
+        @include flex-column;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
         height: 100%;
         background-color: #99e2d0;
+        margin-right:-10px;
     }
 
     &:hover &__validation{
+        visibility: visible;
+        margin-left: 20px;
+        cursor: pointer;
+        transform: translateX(-25px);
+        transition: 3000ms;
+        & .fa-check-circle{
+            transform: rotate(0.5turn);
+            transition: 3000ms;
+        }
+    }
+    
+    &:hover &__price{
+        cursor: pointer;
         transform: translateX(-50px);
         transition: 3000ms;
-    } 
+    }
     
+
+}
+
+.delay-0{
+    animation-delay: 1s;
+}
+
+.delay-1{
+    animation-delay: 2s;
+
+}
+.delay-2{
+    animation-delay: 3s;
+}
+.delay-3{
+    animation-delay: 4s;
+}
+
+.delay-4{
+    animation-delay: 5s;
+
+}
+.delay-5{
+    animation-delay: 6s;
+}
+.delay-6{
+    animation-delay: 7s;
+}
+
+.delay-7{
+    animation-delay: 8s;
 
 }

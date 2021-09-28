@@ -1,10 +1,9 @@
 .restaurant-prev{
     @include flex-column;
-    justify-content: center;
-    align-items: space-around;
     background-color: white;
     border-radius: 30px;
     width: 90%;
+    height: 300px;
     @include shadow;
     @include laptop-only{
         flex-wrap: nowrap;
@@ -18,45 +17,57 @@
     &__img img{
         object-fit: cover;
         width: 100%;
-        height: 280px;
+        height: 90%;
+        max-height: 200px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
     }
 
     &__infos{
+        height: 80px;
         @include flex-column;
         justify-content: center;
         align-items: flex-start;
-        & h6{
+        & h2{
             margin-bottom: 0px;
         }
         & p{
             margin-top: 0px;
         }
-
+    
         &__favoris{
             position: relative;
             left: 80%;
-        }
-
+         }
     }
+
     &__text{
+        height: 30px;
+        width: 90px;
+        color:#1b6150;
+        background-color: $tertiaire;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: relative;
         font-weight: bold;
         @include laptop-only{
-            top:-400px;
-            left: 350px;
+            top:-250px;
+            left: 250px;
+        }
+        @include tablet-only{
+            left: 200px;
         }
         @include mobile-only{
             left: 250px;
         }
-    &__background-color{
-        height: 50px;
-        width: 100px;  
-        position: relative;
-        background-color: $tertiaire;
+        @include mobileM-only{
+            left: 240px;
+        }
+        @include mobileS-only{
+            left: 180px;
+        }
     }
 
-    }
 
 }
