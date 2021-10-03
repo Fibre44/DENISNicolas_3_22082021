@@ -1,6 +1,7 @@
 .todo-prev{
-    
-    z-index: 2;
+    position: relative;
+    background-color: white;
+    z-index: 1;
     @include laptop-only{
         @include flex-column;
         flex-wrap: wrap;
@@ -10,7 +11,7 @@
         align-content: space-between;
     }
     @include mobile-only{
-        flex-wrap: no-wrap;
+        flex-wrap: wrap;
         height: 400px;
         justify-content: space-around;
         align-items: center;
@@ -20,7 +21,6 @@
         
     &__title{
         align-self: flex-start;
-
     }
     &__task{
         @include laptop-todo-task;

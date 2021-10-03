@@ -1,12 +1,36 @@
 
 /*loader*/
-.loading{
+.loading-prev{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     position: absolute;
+    @include laptop-only{
+        height: 1450px;
+    }
+    @include tablet-only{
+        height: 1200px;
+    }
+    @include mobile-only{
+        height: 2600px;
+    }
+    z-index: -1000;
+    opacity: 0.7;
     width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: -9999;
+    background-color: #F2F2EC;
+    animation-name: loading-spinner-background;
+    animation-fill-mode: both;
+    animation-duration: 3000ms;
 
-    animation-name: loading-spinner;
-    animation-duration: 1000ms;
+    &__items{
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        animation: loading-spinner-items;
+        animation-direction: normal;
+        animation-fill-mode: both;
+        animation-duration: 3000ms;
+
+    }
 }

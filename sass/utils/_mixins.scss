@@ -72,9 +72,3 @@
     }    
 }
 
-@for $i from 0 through 10{
-    .delay-#{$i}{
-        animation-delay: #{$i}s;
-
-    }
-}

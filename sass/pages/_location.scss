@@ -1,8 +1,9 @@
 .location-prev{
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    z-index: 1;
     background-color: #f3f3f3;
 }

@@ -1,8 +1,10 @@
 .header{
+    position: relative;
+    background-color: #F2F2F2;
+    z-index: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 1;
 
     &__title{
         font-weight: bold;
