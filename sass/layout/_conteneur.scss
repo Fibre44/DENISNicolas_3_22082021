@@ -70,6 +70,7 @@
             align-items: center;
             height: 5%;
         }
+        
         @include mobile-only{
             @include flex-column;
             justify-content: space-between;
@@ -85,7 +86,7 @@
             height: 1000px;
         }
         @include tablet-only{
-            height: 750px;
+            height: 850px;
         }
 
         @include mobile-only{

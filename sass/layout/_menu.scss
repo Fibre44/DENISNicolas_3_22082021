@@ -16,7 +16,15 @@
     background-color: white;
     border-radius: 10px;
     width: 90%;
-    height: 80px;
+    @include laptop-only{
+        height: 100px;
+    }
+    @include tablet-only {
+        height: 90px;
+    }
+    @include mobile-only{
+        height: 80px;
+    }
     text-overflow: ellipsis;
     animation-name: menu-loader;
     animation-duration: 3000ms;
@@ -43,9 +51,10 @@
     }
 
     &__byline{
-        text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        text-overflow: ellipsis;
+
     }  
 
     &__price{
@@ -54,40 +63,47 @@
 
     &__validation{
         position: absolute;
-        right: 0px;
+        right: 20px;
+        transform-origin: right;
         @include flex-column;
         visibility: hidden;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
         align-items: center;
         justify-content: center;
-        width: 80px;
+        width: 30px;
         height: 80px;
         background-color: #99e2d0;
-        transition: all 500ms ease-in-out;
         & .fa-check-circle{
             transform: rotate(-180deg);
-        }
-      
+        }     
+
+    }
+
+    &:hover{
+        cursor: pointer;
 
     }
 
     &:hover &__validation{
         visibility: visible;
-        margin: 0em 1em -1em -1em;
-        cursor: pointer;
+        transform: scaleX(2);
+        @include transition_validation;
         & .fa-check-circle{
             transform: rotate(5deg);
-            transition: 500ms ease-in-out;
+            @include transition_validation;
         }
     }
-    
+
     &:hover &__price{
-        cursor: pointer;
-        transform: translateX(-80px);
-        transition: 500ms ease-in-out;
+        transform: translateX(-60px);
+        @include transition_validation;
     }
     
+    &:hover &__byline{
+
+        width: 75%;
+    }
 
 }
 

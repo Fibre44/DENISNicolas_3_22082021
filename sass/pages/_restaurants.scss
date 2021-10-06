@@ -14,8 +14,8 @@
     }
     @include tablet-only{
         flex-wrap: nowrap;
-        width: 30%;
-        height: 40%;
+        width: 40%;
+        height: 35%;
     }
     @include mobile-only{
         width: 90%;
@@ -32,6 +32,9 @@
         @include laptop-only{
             max-height: 250px;
 
+        }
+        @include tablet-only{
+            height: 180px;
         }        
         @include mobile-only{
             max-height: 200px;
@@ -72,7 +75,8 @@
             left: 250px;
         }
         @include tablet-only{
-            left: 200px;
+            left: 125px;
+            top: -225px;
         }
         @include mobile-only{
             left: 250px;

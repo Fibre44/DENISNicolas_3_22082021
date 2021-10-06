@@ -21,17 +21,21 @@
 
 @keyframes loading-spinner-items{
     0%{
-
+        transform: translateX(0px);
+        transition: transform 1000ms ease-in-out;
+        background-color: $primaire;
     }
 
     50%{
-        transform: rotate(1turn);
+        transform: translateX(400px);
         transition: transform 1000ms ease-in-out;
     }
     100% {
-        transform: rotate(-1turn);
+        @include tablet-only{
+            transform: translateX(768px)
+        }
+        transform: translateX(800px);
         transition: transform 1000ms ease-in-out;
-
 
     }
 }

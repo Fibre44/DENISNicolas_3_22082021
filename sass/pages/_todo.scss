@@ -23,12 +23,22 @@
         align-self: flex-start;
     }
     &__task{
-        @include laptop-todo-task;
-        @include mobile-todo-task;
         display: flex;
         justify-content: space-around;
         align-items: center;
         @include shadow;
+        @include laptop-only{
+            width: 25%;
+
+        }
+        @include tablet-only{
+            width: 25%;
+
+        }
+        @include mobile-only{
+            width: 85%;
+
+        }
         border-radius: 30px;
         height: 80px;
 
@@ -43,16 +53,18 @@
     &__number{
         border-radius: 50%;
         background-color: $primaire;
-        @include mobile-only{
+        @include laptop-only{
             @include number(laptop);
         };
         @include tablet-only{
             @include number(tablet);
 
         };
-        @include laptop-only{
+
+        @include mobile-only{
             @include number(mobile);
         };
+
         height: 20px;
         width: 20px;
         @include flex-column;

@@ -35,20 +35,6 @@
 }
 
 
-@mixin laptop-todo-task {
-    @media screen and (max-width : map-get($breakpoints, laptop4k )){
-        width: 25%;
-    }
-    
-}
-
-@mixin mobile-todo-task {
-    @media screen and (max-width : map-get($breakpoints, mobile )){
-        width: 85%;
-    }
-    
-}
-
 @mixin mobile-description {
     @media screen and (max-width : map-get($breakpoints, mobile )){
         height: 200px;
@@ -70,5 +56,12 @@
     @each $state, $list in lists {
         margin-left: map-get($number, $device);        
     }    
+}
+
+@mixin transition_validation {
+
+    transition: 500ms ease-in-out;
+
+    
 }
 

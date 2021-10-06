@@ -6,7 +6,6 @@
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
-
   },
   "repository": {
     "type": "git",
@@ -17,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Fibre44/DENISNicolas_3_22082021/issues"
   },
-  "homepage": "https://github.com/Fibre44/DENISNicolas_3_22082021#readme"
+  "homepage": "https://github.com/Fibre44/DENISNicolas_3_22082021#readme",
+  "dependencies": {
+    "autoprefixer": "^10.3.6"
+  }
 }
