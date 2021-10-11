@@ -11,6 +11,10 @@ h2, h6, span, p, .btn {
   font-family: Roboto, sans-serif;
 }
 
+footer p {
+  font-family: "Shrikhand";
+}
+
 /*Gestion de l'animation pour l'apparition des menus*/
 .delay-0 {
   animation-delay: 0s;
@@ -58,7 +62,7 @@ h2, h6, span, p, .btn {
 
 .header {
   position: relative;
-  background-color: #F2F2F2;
+  background-color: #fff;
   z-index: 1;
   display: flex;
   justify-content: space-around;
@@ -115,8 +119,12 @@ ul {
 ul li {
   padding: 5px 0 5px 0;
 }
+ul li i {
+  margin-right: 10px;
+}
 ul li a {
   color: white;
+  text-decoration: none;
 }
 
 .menu-prev {
@@ -253,9 +261,24 @@ ul li a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 90%;
+  margin-left: 5%;
   flex-wrap: nowrap;
+}
+.conteneur__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteneur__icons:hover {
+  cursor: pointer;
+}
+.conteneur__icons:hover .fas {
+  opacity: 1;
+}
+.conteneur__icons:hover .fill {
+  opacity: 0;
 }
 .conteneur__byline {
   display: flex;
@@ -295,7 +318,6 @@ ul li a {
 }
 .conteneur__meals {
   width: 100%;
-  height: 25%;
 }
 @media screen and (max-width: 2560px) {
   .conteneur__meals {
@@ -309,9 +331,8 @@ ul li a {
   .conteneur__meals {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    height: 25%;
+    height: 20%;
   }
 }
 .conteneur--height--border {
@@ -461,6 +482,7 @@ ul li a {
   border-radius: 30px;
   width: 90%;
   height: 300px;
+  cursor: pointer;
   box-shadow: 1px 2px 8px 2px #c4c4c4;
 }
 @media screen and (max-width: 2560px) {
@@ -520,7 +542,23 @@ ul li a {
 }
 .restaurant-prev__infos__favoris {
   position: relative;
-  left: 80%;
+  left: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width: 425px) {
+  .restaurant-prev__infos__favoris .fa-heart {
+    right: 20px;
+    top: -20px;
+  }
+}
+.restaurant-prev__infos__favoris:hover {
+  cursor: pointer;
+}
+.restaurant-prev__infos__favoris:hover .fas {
+  opacity: 1;
+}
+.restaurant-prev__infos__favoris:hover .fill {
+  opacity: 0;
 }
 .restaurant-prev__text {
   height: 30px;
@@ -573,17 +611,26 @@ ul li a {
   align-items: center;
 }
 
-.fa-heart:hover {
+/*coeur sur la page menu*/
+.icons--hover {
+  opacity: 0;
   color: #9356DC;
-  cursor: pointer;
-  background: linear-gradient(#9356DC, #FF79DA);
 }
 
+@media screen and (max-width: 425px) {
+  .fa-heart {
+    position: absolute;
+    right: 50px;
+  }
+}
+
+/*validation des menus*/
 .fa-check-circle {
   color: white;
   background: #99E2D0;
 }
 
+/*annulation de la class .fas*/
 /*loader*/
 .loading-prev {
   display: flex;

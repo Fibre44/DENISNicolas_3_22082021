@@ -21,15 +21,19 @@ footer {
       };
       @include mobile-only{
         @include flex-column;
-        align-items: flex-start
+        align-items: flex-start;
+        
       };
       list-style-type: none;
   
       li {
         padding: 5px 0 5px 0;
-  
+        i{
+          margin-right: 10px;
+        }
         a {
           color: white;
+          text-decoration: none;
         }
       }
 

@@ -24,9 +24,24 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
         width: 90%;
+        margin-left: 5%;
         flex-wrap: nowrap;
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            cursor: pointer;
+            & .fas{
+                opacity: 1;
+            }
+            & .fill{
+                opacity: 0;
+            }
+        }
     }
     &__byline{
         display: flex;
@@ -63,7 +78,6 @@
 
     &__meals{
         width: 100%;
-        height: 25%;
         @include laptop-only{
             display: flex;
             justify-content: space-around;
@@ -73,9 +87,8 @@
         
         @include mobile-only{
             @include flex-column;
-            justify-content: space-between;
             align-items: center;
-            height: 25%;
+            height: 20%;
         }
     }
 

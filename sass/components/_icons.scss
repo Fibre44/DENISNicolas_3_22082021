@@ -1,10 +1,31 @@
-.fa-heart:hover {
-    color: $primaire;
-    cursor: pointer;
-    background: linear-gradient($primaire ,$secondaire);
+/*coeur sur la page menu*/
+
+.icons{
+
+    &--hover{
+        opacity: 0;
+        color : $primaire    
+    }
+
 }
+
+.fa-heart{
+    @include mobile-only{
+        position: absolute;
+        right: 50px;
+   }
+
+}
+
+/*validation des menus*/
 .fa-check-circle{
     color: white;
     background: $tertiaire;
 
 }
+
+/*annulation de la class .fas*/
+
+
+
+
