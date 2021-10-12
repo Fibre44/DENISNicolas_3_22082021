@@ -3,6 +3,14 @@
         width: 25%
         
     }
+    @include tablet-only{
+        @include flex-column;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: nowrap;
+        width: 90%;
+
+    }
     @include mobile-only{
         @include flex-column;
         justify-content: space-between;
@@ -63,7 +71,6 @@
 
     &__validation{
         position: absolute;
-        right: 20px;
         transform-origin: right;
         @include flex-column;
         visibility: hidden;
@@ -72,11 +79,22 @@
         align-items: center;
         justify-content: center;
         width: 30px;
-        height: 80px;
         background-color: #99e2d0;
         & .fa-check-circle{
             transform: rotate(-180deg);
-        }     
+        }
+
+        @include tablet-only{
+            right: 35px;
+            height: 90px;
+
+        }
+        
+        @include mobile-only{
+            right: 20px;
+            height: 80px;
+
+        }
 
     }
 

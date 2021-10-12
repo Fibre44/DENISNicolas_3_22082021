@@ -143,6 +143,16 @@ ul li a {
     width: 25%;
   }
 }
+@media screen and (max-width: 768px) {
+  .menu-prev {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    width: 90%;
+  }
+}
 @media screen and (max-width: 425px) {
   .menu-prev {
     display: flex;
@@ -192,7 +202,6 @@ ul li a {
 }
 .menu-prev__validation {
   position: absolute;
-  right: 20px;
   transform-origin: right;
   display: flex;
   flex-direction: column;
@@ -202,11 +211,22 @@ ul li a {
   align-items: center;
   justify-content: center;
   width: 30px;
-  height: 80px;
   background-color: #99e2d0;
 }
 .menu-prev__validation .fa-check-circle {
   transform: rotate(-180deg);
+}
+@media screen and (max-width: 768px) {
+  .menu-prev__validation {
+    right: 35px;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .menu-prev__validation {
+    right: 20px;
+    height: 80px;
+  }
 }
 .menu-prev:hover {
   cursor: pointer;
@@ -248,7 +268,7 @@ ul li a {
 }
 @media screen and (max-width: 768px) {
   .conteneur {
-    height: 1000px;
+    height: 1500px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -327,6 +347,14 @@ ul li a {
     height: 5%;
   }
 }
+@media screen and (max-width: 768px) {
+  .conteneur__meals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+  }
+}
 @media screen and (max-width: 425px) {
   .conteneur__meals {
     display: flex;
@@ -359,6 +387,11 @@ ul li a {
 .picture-prev__img img {
   object-fit: cover;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .picture-prev__img img {
+    max-height: 300px;
+  }
 }
 
 .description-prev {
@@ -519,7 +552,7 @@ ul li a {
 }
 @media screen and (max-width: 768px) {
   .restaurant-prev__img img {
-    height: 180px;
+    max-height: 180px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -579,7 +612,7 @@ ul li a {
 }
 @media screen and (max-width: 768px) {
   .restaurant-prev__text {
-    left: 125px;
+    left: 200px;
     top: -225px;
   }
 }
@@ -616,10 +649,35 @@ ul li a {
   opacity: 0;
   color: #9356DC;
 }
-
-@media screen and (max-width: 425px) {
-  .fa-heart {
+@media screen and (max-width: 2560px) {
+  .icons--position {
     position: absolute;
+    right: 1000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icons--position {
+    right: 350px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .icons--position {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 2560px) {
+  .icons--position--index {
+    position: absolute;
+    right: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icons--position--index {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .icons--position--index {
     right: 50px;
   }
 }

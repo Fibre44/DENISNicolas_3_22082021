@@ -35,7 +35,7 @@
 
         }
         @include tablet-only{
-            height: 180px;
+            max-height: 180px;
         }        
         @include mobile-only{
             max-height: 200px;
@@ -94,7 +94,7 @@
             left: 250px;
         }
         @include tablet-only{
-            left: 125px;
+            left: 200px;
             top: -225px;
         }
         @include mobile-only{

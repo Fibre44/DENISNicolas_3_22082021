@@ -4,5 +4,9 @@
 
         object-fit: cover;
         width: 100%;
+
+        @include tablet-only{
+            max-height: 300px;
+        }
     }
 }

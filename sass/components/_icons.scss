@@ -7,13 +7,43 @@
         color : $primaire    
     }
 
+    &--position{
+
+        @include laptop-only{
+            position: absolute;
+            right: 1000px;
+        }
+        @include tablet-only{
+            right: 350px;
+        }
+        @include mobile-only{
+            right: 50px;
+       }
+
+       &--index{
+
+        @include laptop-only{
+            position: absolute;
+            right: 50px;
+        }
+        @include tablet-only{
+            right: 30px;
+        }
+        @include mobile-only{
+            right: 50px;
+       }
+
+       }
+    
+
+    }
+
+    
+
 }
 
 .fa-heart{
-    @include mobile-only{
-        position: absolute;
-        right: 50px;
-   }
+
 
 }
 

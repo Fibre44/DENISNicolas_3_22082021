@@ -13,7 +13,7 @@
         @include flex-column;
     };
     @include tablet-only{
-        height: 1000px;
+        height: 1500px;
     }
     @include mobile-only{
         height: 1500px;
@@ -83,6 +83,12 @@
             justify-content: space-around;
             align-items: center;
             height: 5%;
+        }
+
+        @include tablet-only{
+            @include flex-column;
+            align-items: center;
+            height: 20%;
         }
         
         @include mobile-only{
