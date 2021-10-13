@@ -7,7 +7,7 @@ h1, .footer__informations:nth-child(1) {
   font-family: "Shrikhand";
 }
 
-h2, h6, span, p, .btn {
+h2, h4, h6, span, p, .btn {
   font-family: Roboto, sans-serif;
 }
 
