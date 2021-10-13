@@ -790,9 +790,6 @@ ul li a {
     transition: transform 1000ms ease-in-out;
   }
   100% {
-    @media screen and (max-width: 768px) {
-      transform: translateX(768px);
-    }
     transform: translateX(800px);
     transition: transform 1000ms ease-in-out;
   }

@@ -31,11 +31,8 @@
         transition: transform 1000ms ease-in-out;
     }
     100% {
-        @include tablet-only{
-            transform: translateX(768px)
-        }
+
         transform: translateX(800px);
         transition: transform 1000ms ease-in-out;
-
     }
 }
