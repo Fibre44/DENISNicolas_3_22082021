@@ -2,6 +2,8 @@ footer {
     background-color: #353535;
     position: relative;
     color: white;
+    
+    z-index: 1;
     &__informations p {
       font-style: italic;
     }
@@ -18,6 +20,7 @@ footer {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
       };
       @include mobile-only{
         @include flex-column;

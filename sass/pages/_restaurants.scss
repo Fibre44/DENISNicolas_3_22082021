@@ -90,8 +90,8 @@
         position: relative;
         font-weight: bold;
         @include laptop-only{
-            top:-250px;
-            left: 250px;
+            top:-300px;
+            left: 300px;
         }
         @include tablet-only{
             left: 200px;

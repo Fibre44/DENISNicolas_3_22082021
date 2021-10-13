@@ -1,6 +1,6 @@
 .menu-prev{
     @include laptop-only{
-        width: 25%
+        width: 90%
         
     }
     @include tablet-only{
@@ -39,13 +39,10 @@
     animation-iteration-count: 1;
     animation-fill-mode: both;
 
-
-
     &__title{
         @include marge-left__marge-right;
         font-weight: bold;
         margin-bottom: 0px;
-
     }
 
     &__informations{
@@ -55,7 +52,6 @@
         align-items: center;
         margin-left: 5%;
         width: 90%;
-
     }
 
     &__byline{
@@ -84,6 +80,11 @@
             transform: rotate(-180deg);
         }
 
+        @include laptop-only{
+            right: 70px;
+            height: 100px;
+        }
+
         @include tablet-only{
             right: 35px;
             height: 90px;
@@ -95,12 +96,10 @@
             height: 80px;
 
         }
-
     }
 
     &:hover{
         cursor: pointer;
-
     }
 
     &:hover &__validation{

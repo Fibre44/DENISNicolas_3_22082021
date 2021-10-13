@@ -7,7 +7,7 @@
     align-items: center;
     position: absolute;
     @include laptop-only{
-        height: 1450px;
+        height: 1350px;
     }
     @include tablet-only{
         height: 1200px;

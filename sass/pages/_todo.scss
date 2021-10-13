@@ -10,12 +10,22 @@
         justify-content: space-around;
         align-content: space-between;
     }
+
+    @include  tablet-only{
+        height: 150px;
+        justify-content: flex-end;
+        align-content: space-around;
+        margin-bottom: 10px;
+        
+    }
     @include mobile-only{
         flex-wrap: wrap;
         height: 400px;
         justify-content: space-around;
         align-items: center;
-        align-content: center; 
+        align-content: center;
+        margin-bottom: 0px;
+ 
     }
 
         
@@ -32,7 +42,7 @@
 
         }
         @include tablet-only{
-            width: 25%;
+            width: 30%;
 
         }
         @include mobile-only{

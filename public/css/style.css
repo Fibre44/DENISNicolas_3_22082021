@@ -86,6 +86,7 @@ footer {
   background-color: #353535;
   position: relative;
   color: white;
+  z-index: 1;
 }
 footer__informations p {
   font-style: italic;
@@ -140,7 +141,7 @@ ul li a {
 }
 @media screen and (max-width: 2560px) {
   .menu-prev {
-    width: 25%;
+    width: 90%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -216,6 +217,12 @@ ul li a {
 .menu-prev__validation .fa-check-circle {
   transform: rotate(-180deg);
 }
+@media screen and (max-width: 2560px) {
+  .menu-prev__validation {
+    right: 70px;
+    height: 100px;
+  }
+}
 @media screen and (max-width: 768px) {
   .menu-prev__validation {
     right: 35px;
@@ -253,7 +260,8 @@ ul li a {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 1500px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   border-top-left-radius: 50px;
@@ -262,8 +270,7 @@ ul li a {
 }
 @media screen and (max-width: 2560px) {
   .conteneur {
-    display: flex;
-    flex-direction: column;
+    height: 1500px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -273,7 +280,7 @@ ul li a {
 }
 @media screen and (max-width: 425px) {
   .conteneur {
-    height: 1500px;
+    height: 1300px;
   }
 }
 .conteneur__title {
@@ -342,9 +349,10 @@ ul li a {
 @media screen and (max-width: 2560px) {
   .conteneur__meals {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 5%;
+    height: 25%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -352,7 +360,7 @@ ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20%;
+    height: 22%;
   }
 }
 @media screen and (max-width: 425px) {
@@ -360,7 +368,7 @@ ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20%;
+    height: 25%;
   }
 }
 .conteneur--height--border {
@@ -370,7 +378,7 @@ ul li a {
 }
 @media screen and (max-width: 2560px) {
   .conteneur--height--border {
-    height: 1000px;
+    height: 900px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -428,6 +436,14 @@ ul li a {
     align-content: space-between;
   }
 }
+@media screen and (max-width: 768px) {
+  .todo-prev {
+    height: 150px;
+    justify-content: flex-end;
+    align-content: space-around;
+    margin-bottom: 10px;
+  }
+}
 @media screen and (max-width: 425px) {
   .todo-prev {
     flex-wrap: wrap;
@@ -435,6 +451,7 @@ ul li a {
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    margin-bottom: 0px;
   }
 }
 .todo-prev__title {
@@ -455,7 +472,7 @@ ul li a {
 }
 @media screen and (max-width: 768px) {
   .todo-prev__task {
-    width: 25%;
+    width: 30%;
   }
 }
 @media screen and (max-width: 425px) {
@@ -482,12 +499,12 @@ ul li a {
 }
 @media screen and (max-width: 2560px) {
   .todo-prev__task__number {
-    margin-left: -30px;
+    margin-left: -45px;
   }
 }
 @media screen and (max-width: 768px) {
   .todo-prev__task__number {
-    margin-left: -35px;
+    margin-left: -20px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -606,8 +623,8 @@ ul li a {
 }
 @media screen and (max-width: 2560px) {
   .restaurant-prev__text {
-    top: -250px;
-    left: 250px;
+    top: -300px;
+    left: 300px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -706,7 +723,7 @@ ul li a {
 }
 @media screen and (max-width: 2560px) {
   .loading-prev {
-    height: 1450px;
+    height: 1350px;
   }
 }
 @media screen and (max-width: 768px) {
