@@ -1,24 +1,12 @@
 .menu-prev{
     @include laptop-only{
-        width: 90%
-        
-    }
-    @include tablet-only{
         @include flex-column;
         justify-content: space-between;
         align-content: space-between;
         flex-wrap: nowrap;
-        width: 90%;
-
+        width: 90%;        
     }
-    @include mobile-only{
-        @include flex-column;
-        justify-content: space-between;
-        align-content: space-between;
-        flex-wrap: nowrap;
-        width: 90%;
-    }
-
+  
     @include shadow;
 
     background-color: white;
@@ -81,8 +69,13 @@
         }
 
         @include laptop-only{
-            right: 70px;
+            right: 110px;
             height: 100px;
+        }
+
+        @include laptop-only-L{
+            right: 70px;
+
         }
 
         @include tablet-only{

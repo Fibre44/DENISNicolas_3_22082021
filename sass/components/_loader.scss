@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    position: absolute;
+    position: fixed;
     @include laptop-only{
         height: 1350px;
     }
@@ -32,6 +32,8 @@
         animation-direction: normal;
         animation-fill-mode: both;
         animation-duration: 3000ms;
+        position: fixed;
+        top: 500px;
 
     }
 

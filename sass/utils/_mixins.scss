@@ -22,6 +22,12 @@
     }   
 }
 
+@mixin laptop-only-L {
+    @media screen and (max-width : map-get($breakpoints, laptopL )){
+        @content;
+    }   
+}
+
 @mixin mobileS-only {
     @media screen and (max-width : map-get($breakpoints, mobileS )){
         @content;
