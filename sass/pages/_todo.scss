@@ -64,8 +64,14 @@
         border-radius: 50%;
         background-color: $primaire;
         @include laptop-only{
-            @include number(laptop);
+            @include number(laptop4k);
         };
+        @include laptop-only-L{
+            @include number(laptopL);
+        };
+        @include laptop-only-S{
+            @include number(laptopS)
+        }
         @include tablet-only{
             @include number(tablet);
 
@@ -74,7 +80,10 @@
         @include mobile-only{
             @include number(mobile);
         };
+        @include mobileS-only{
+            @include number(mobileS);
 
+        };
         height: 20px;
         width: 20px;
         @include flex-column;

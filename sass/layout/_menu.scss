@@ -67,27 +67,18 @@
         & .fa-check-circle{
             transform: rotate(-180deg);
         }
+        right: 5%;
 
         @include laptop-only{
-            right: 110px;
             height: 100px;
         }
 
-        @include laptop-only-L{
-            right: 70px;
-
-        }
-
         @include tablet-only{
-            right: 35px;
             height: 90px;
-
         }
         
         @include mobile-only{
-            right: 20px;
             height: 80px;
-
         }
     }
 

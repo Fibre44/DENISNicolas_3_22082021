@@ -90,21 +90,30 @@
         position: relative;
         font-weight: bold;
         @include laptop-only{
-            top:-300px;
-            left: 300px;
+            @include spanTop(laptop4k);
+            @include spanLeft(laptop4k);
+        }
+        @include laptop-only-L{
+            @include spanTop(laptopL);
+            @include spanLeft(laptopL);
+
+        }
+        @include laptop-only-S{
+            @include spanTop(laptopS);
+            @include spanLeft(laptopS);
         }
         @include tablet-only{
-            left: 200px;
-            top: -225px;
+            @include spanTop(tablet);
+            @include spanLeft(tablet);
         }
         @include mobile-only{
-            left: 250px;
+            @include spanLeft(mobile);
         }
         @include mobileM-only{
-            left: 240px;
+            @include spanLeft(mobileM);
         }
         @include mobileS-only{
-            left: 180px;
+            @include spanLeft(mobileS);
         }
     }
 

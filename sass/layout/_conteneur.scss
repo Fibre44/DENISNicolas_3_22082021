@@ -51,6 +51,15 @@
         text-decoration: none;
     }
     &__underline{
+        @include laptop-only{
+            @include underlineWidth(laptop4k);
+        };
+        @include tablet-only{
+            @include underlineWidth(tablet);
+        };
+        @include mobileM-only{
+            @include underlineWidth(mobile);
+        };
         width: 15%;
         height: 2px;
         background-color:$tertiaire;

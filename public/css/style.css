@@ -15,6 +15,8 @@ footer p {
   font-family: "Shrikhand";
 }
 
+/*Gestion de la position des chiffres sur la page d'index*/
+/*Gestion de la position des chiffres sur la page d'index. La boucle va chercher dans la variable number le nombre de pixel*/
 /*Gestion de l'animation pour l'apparition des menus*/
 .delay-0 {
   animation-delay: 0s;
@@ -198,30 +200,23 @@ ul li a {
   justify-content: center;
   width: 30px;
   background-color: #99e2d0;
+  right: 5%;
 }
 .menu-prev__validation .fa-check-circle {
   transform: rotate(-180deg);
 }
 @media screen and (max-width: 2560px) {
   .menu-prev__validation {
-    right: 110px;
     height: 100px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .menu-prev__validation {
-    right: 70px;
   }
 }
 @media screen and (max-width: 768px) {
   .menu-prev__validation {
-    right: 35px;
     height: 90px;
   }
 }
 @media screen and (max-width: 425px) {
   .menu-prev__validation {
-    right: 20px;
     height: 80px;
   }
 }
@@ -308,6 +303,21 @@ ul li a {
   height: 2px;
   background-color: #99E2D0;
 }
+@media screen and (max-width: 2560px) {
+  .conteneur__underline {
+    width: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .conteneur__underline {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .conteneur__underline {
+    width: 15%;
+  }
+}
 .conteneur__heading {
   display: flex;
   flex-direction: column;
@@ -385,6 +395,7 @@ ul li a {
 .picture-prev__img img {
   object-fit: cover;
   width: 100%;
+  max-height: 800px;
 }
 @media screen and (max-width: 768px) {
   .picture-prev__img img {
@@ -489,7 +500,17 @@ ul li a {
 }
 @media screen and (max-width: 2560px) {
   .todo-prev__task__number {
+    margin-left: -15%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .todo-prev__task__number {
     margin-left: -45px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .todo-prev__task__number {
+    margin-left: -20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -500,6 +521,11 @@ ul li a {
 @media screen and (max-width: 425px) {
   .todo-prev__task__number {
     margin-left: -40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .todo-prev__task__number {
+    margin-left: -25px;
   }
 }
 
@@ -614,13 +640,25 @@ ul li a {
 @media screen and (max-width: 2560px) {
   .restaurant-prev__text {
     top: -300px;
+    left: 70%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .restaurant-prev__text {
+    top: -300px;
     left: 300px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .restaurant-prev__text {
+    top: -260px;
+    left: 200px;
   }
 }
 @media screen and (max-width: 768px) {
   .restaurant-prev__text {
-    left: 200px;
     top: -225px;
+    left: 200px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -685,7 +723,7 @@ ul li a {
 }
 @media screen and (max-width: 425px) {
   .icons--position--index {
-    right: 50px;
+    right: 3%;
   }
 }
 

@@ -28,6 +28,12 @@
     }   
 }
 
+@mixin laptop-only-S {
+    @media screen and (max-width : map-get($breakpoints, laptop )){
+        @content;
+    }   
+}
+
 @mixin mobileS-only {
     @media screen and (max-width : map-get($breakpoints, mobileS )){
         @content;
@@ -58,11 +64,32 @@
     box-shadow: 1px 2px 8px 2px #c4c4c4;    
 }
 
+/*Gestion de la position des chiffres sur la page d'index. La boucle va chercher dans la variable number le nombre de pixel*/
+
 @mixin number ($device) {
     @each $state, $list in lists {
         margin-left: map-get($number, $device);        
     }    
 }
+
+@mixin spanTop ($device) {
+    @each $state, $list in lists {
+        top: map-get($spanTop, $device);        
+    }    
+}
+
+@mixin spanLeft ($device) {
+    @each $state, $list in lists {
+        left: map-get($spanLeft, $device);        
+    }    
+}
+
+@mixin underlineWidth ($device) {
+    @each $state, $list in lists {
+        width: map-get($underlineWidth, $device);        
+    }    
+}
+
 
 @mixin transition_validation {
 
