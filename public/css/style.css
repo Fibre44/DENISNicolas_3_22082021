@@ -268,6 +268,21 @@ ul li a {
     height: 1300px;
   }
 }
+@media screen and (max-width: 2560px) {
+  .conteneur--height {
+    height: 2000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .conteneur--height {
+    height: 1800px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .conteneur--height {
+    height: 1600px;
+  }
+}
 .conteneur__title {
   align-self: flex-start;
   display: flex;
@@ -747,7 +762,7 @@ ul li a {
   background-color: #F2F2EC;
   animation-name: loading-spinner-background;
   animation-fill-mode: both;
-  animation-duration: 3000ms;
+  animation-duration: 5000ms;
 }
 @media screen and (max-width: 2560px) {
   .loading-prev {
@@ -772,7 +787,7 @@ ul li a {
   animation: loading-spinner-items;
   animation-direction: normal;
   animation-fill-mode: both;
-  animation-duration: 3000ms;
+  animation-duration: 5000ms;
   position: fixed;
   top: 500px;
 }

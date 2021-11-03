@@ -21,7 +21,7 @@
     background-color: #F2F2EC;
     animation-name: loading-spinner-background;
     animation-fill-mode: both;
-    animation-duration: 3000ms;
+    animation-duration: 5000ms;
 
     &__items{
         width: 100px;
@@ -31,7 +31,7 @@
         animation: loading-spinner-items;
         animation-direction: normal;
         animation-fill-mode: both;
-        animation-duration: 3000ms;
+        animation-duration: 5000ms;
         position: fixed;
         top: 500px;
 

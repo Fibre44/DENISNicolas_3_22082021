@@ -26,10 +26,12 @@
         background-color: $primaire;
     }
 
+
     50%{
         transform: translateX(400px);
         transition: transform 1000ms ease-in-out;
     }
+
     100% {
 
         transform: translateX(800px);

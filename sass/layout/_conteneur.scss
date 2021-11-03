@@ -15,11 +15,23 @@
     };
     @include tablet-only{
         height: 1500px;
-    }
+    };
     @include mobile-only{
         height: 1300px;
-    }
+    };
+    &--height{
+        @include laptop-only{
+            height: 2000px;
+    
+        };
+        @include tablet-only{
+            height: 1800px;
+        };
+        @include mobile-only{
+            height: 1600px;
+        };
 
+    }
     &__title{
         align-self: flex-start;
         display: flex;
