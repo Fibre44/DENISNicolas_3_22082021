@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Shrikhand";
-  src: url(./../../sass/vendors/shrikhand/Shrikhand-Regular.otf);
+  src: url(./../../../sass/vendors/shrikhand/Shrikhand-Regular.otf);
   /*attention prendre le chemin relatif depuis le fichier css dans public*/
 }
 h1, .footer__informations:nth-child(1) {
