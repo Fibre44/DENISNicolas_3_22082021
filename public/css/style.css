@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Shrikhand";
   src: url(./../../../sass/vendors/shrikhand/Shrikhand-Regular.otf);
@@ -17,6 +18,13 @@ footer p {
 
 /*Gestion de la position des chiffres sur la page d'index*/
 /*Gestion de la position des chiffres sur la page d'index. La boucle va chercher dans la variable number le nombre de pixel*/
+/*créer une variable $devices
+@mixin number ($devices) {
+    @each $state, $device in $devices {
+        margin-left: map-get($number, $device);
+
+    }    
+}*/
 /*Gestion de l'animation pour l'apparition des menus*/
 .delay-0 {
   animation-delay: 0s;
@@ -293,6 +301,11 @@ ul li a {
   margin-left: 5%;
   flex-wrap: nowrap;
 }
+@media screen and (max-width: 375px) {
+  .conteneur__title {
+    width: 70%;
+  }
+}
 .conteneur__icons {
   display: flex;
   align-items: center;
@@ -528,11 +541,6 @@ ul li a {
     margin-left: -20px;
   }
 }
-@media screen and (max-width: 768px) {
-  .todo-prev__task__number {
-    margin-left: -20px;
-  }
-}
 @media screen and (max-width: 425px) {
   .todo-prev__task__number {
     margin-left: -40px;
@@ -540,7 +548,7 @@ ul li a {
 }
 @media screen and (max-width: 320px) {
   .todo-prev__task__number {
-    margin-left: -25px;
+    margin-left: -30px;
   }
 }
 

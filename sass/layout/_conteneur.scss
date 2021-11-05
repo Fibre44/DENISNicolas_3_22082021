@@ -41,6 +41,9 @@
         width: 90%;
         margin-left: 5%;
         flex-wrap: nowrap;
+        @include mobileM-only{
+            width: 70%;
+        }
     }
     &__icons{
         display: flex;

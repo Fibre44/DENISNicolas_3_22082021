@@ -66,35 +66,38 @@
 
 /*Gestion de la position des chiffres sur la page d'index. La boucle va chercher dans la variable number le nombre de pixel*/
 
-@mixin number ($device) {
-    @each $state, $list in lists {
-        margin-left: map-get($number, $device);        
+/*créer une variable $devices
+@mixin number ($devices) {
+    @each $state, $device in $devices {
+        margin-left: map-get($number, $device);
+                
     }    
+}*/
+
+@mixin number ($device) {
+        margin-left: map-get($number, $device);        
+     
 }
 
 @mixin spanTop ($device) {
-    @each $state, $list in lists {
         top: map-get($spanTop, $device);        
-    }    
+    
 }
 
 @mixin spanLeft ($device) {
-    @each $state, $list in lists {
         left: map-get($spanLeft, $device);        
-    }    
+     
 }
 
 @mixin underlineWidth ($device) {
-    @each $state, $list in lists {
         width: map-get($underlineWidth, $device);        
-    }    
+      
 }
 
 
 @mixin transition_validation {
 
     transition: 500ms ease-in-out;
-
     
 }
 
