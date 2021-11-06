@@ -3,12 +3,6 @@
     flex-direction: column;    
 }
 
-/*
-@mixin mobile-only {
-    @media screen and (max-width : map-get($breakpoints, mobile )){
-        @content;
-    }   
-}*/
 
 @mixin tablet-only {
     @media screen and (max-width : map-get($breakpoints, tablet )) and (min-width : map-get($breakpoints, tablet )){
@@ -17,42 +11,35 @@
 }
 
 @mixin laptop-only {
-    @media all and (max-width : map-get($breakpoints, laptop4k )) and (min-width: map-get($breakpoints, laptop ) ){
+    @media all and (max-width : map-get($breakpoints, laptop4k )) and (min-width: map-get($breakpoints, laptop )){
         @content;
     }   
 }
 
 @mixin laptop-only-L {
-    @media screen and (max-width : map-get($breakpoints, laptopL )){
+    @media screen and (max-width : map-get($breakpoints, laptopL )) and (min-width: map-get($breakpoints, laptopL )){
         @content;
     }   
 }
 
 @mixin laptop-only-S {
-    @media screen and (max-width : map-get($breakpoints, laptop )){
+    @media screen and (max-width : map-get($breakpoints, laptop )) and (min-width: map-get($breakpoints, laptop )){
         @content;
     }   
 }
 
 @mixin mobileS-only {
-    @media screen and (max-width : map-get($breakpoints, mobileS )){
+    @media screen and (max-width : map-get($breakpoints, mobileS )) and (min-width: map-get($breakpoints, mobileS )){
         @content;
     }   
 }
 
 @mixin mobileM-only {
-    @media screen and (max-width : map-get($breakpoints, mobileM )){
+    @media screen and (max-width : map-get($breakpoints, mobileM )) and (min-width: map-get($breakpoints, mobileM )){
         @content;
     }   
 }
 
-
-@mixin mobile-description {
-    @media screen and (max-width : map-get($breakpoints, mobile )){
-        height: 200px;
-    }
-    
-}
 
 @mixin marge-left__marge-right {
     margin-left: 5%;

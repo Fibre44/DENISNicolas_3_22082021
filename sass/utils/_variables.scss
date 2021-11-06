@@ -35,7 +35,7 @@ $desciption:(
 /*Gestion de la position des chiffres sur la page d'index*/
 $number:(
     mobile: -40px,
-    tablet: -40px,
+    tablet: -20px,
     laptop4k: -15%,
     laptopL: -45px,
     laptopS : -20px,
@@ -43,7 +43,6 @@ $number:(
 );
 
 $spanTop :(
-    /*mobile: -40px,*/
     tablet: -225px,
     laptop4k: -300px,
     laptopL: -300px,
@@ -51,7 +50,6 @@ $spanTop :(
     mobileS : -25px, 
 );
 $spanLeft :(
-    /*mobile: 250px,*/
     tablet: 200px,
     laptop4k: 70%,
     laptopL: 300px,
@@ -60,7 +58,6 @@ $spanLeft :(
     mobileM : 240px, 
 );
 $underlineWidth:(
-    /*mobile: 15%,*/
     tablet: 15%,
     laptop4k: 5%,
     laptopL: 5%,

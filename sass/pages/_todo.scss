@@ -8,18 +8,18 @@
     align-items: center;
     align-content: center;
     margin-bottom: 0px;
+    padding-bottom: 50px;
     @include flex-column;
 
     @include laptop-only{
-        flex-wrap: wrap;
         height: 100px;
         width: 100%;
-        justify-content: space-around;
         align-content: space-between;
     }
 
     @include  tablet-only{
         height: 150px;
+        width: 100%;
         justify-content: flex-end;
         align-content: space-around;
         margin-bottom: 10px;
@@ -71,6 +71,9 @@
         @include laptop-only-S{
             @include number(laptopS);
 
+        }
+        @include tablet-only{
+            @include number(tablet);
         }
 
         @include mobileS-only{

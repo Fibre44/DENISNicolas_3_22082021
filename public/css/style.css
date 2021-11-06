@@ -16,12 +16,6 @@ footer p {
 }
 
 /*Gestion de la position des chiffres sur la page d'index*/
-/*
-@mixin mobile-only {
-    @media screen and (max-width : map-get($breakpoints, mobile )){
-        @content;
-    }   
-}*/
 /*Gestion de l'animation pour l'apparition des menus*/
 .delay-0 {
   animation-delay: 0s;
@@ -270,7 +264,6 @@ ul li a {
   }
 }
 .conteneur__title {
-  align-self: flex-start;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -279,7 +272,7 @@ ul li a {
   margin-left: 5%;
   flex-wrap: nowrap;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) and (min-width: 375px) {
   .conteneur__title {
     width: 70%;
   }
@@ -403,21 +396,21 @@ ul li a {
   align-items: center;
   align-content: center;
   margin-bottom: 0px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
 }
 @media all and (max-width: 2560px) and (min-width: 1024px) {
   .todo-prev {
-    flex-wrap: wrap;
     height: 100px;
     width: 100%;
-    justify-content: space-around;
     align-content: space-between;
   }
 }
 @media screen and (max-width: 768px) and (min-width: 768px) {
   .todo-prev {
     height: 150px;
+    width: 100%;
     justify-content: flex-end;
     align-content: space-around;
     margin-bottom: 10px;
@@ -468,17 +461,22 @@ ul li a {
     margin-left: -15%;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) and (min-width: 1440px) {
   .todo-prev__task__number {
     margin-left: -45px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 1024px) {
   .todo-prev__task__number {
     margin-left: -20px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 768px) {
+  .todo-prev__task__number {
+    margin-left: -20px;
+  }
+}
+@media screen and (max-width: 320px) and (min-width: 320px) {
   .todo-prev__task__number {
     margin-left: -30px;
   }
@@ -581,7 +579,7 @@ ul li a {
   justify-content: center;
   position: relative;
   font-weight: bold;
-  top: -40px;
+  top: -250px;
   left: 250px;
 }
 @media all and (max-width: 2560px) and (min-width: 1024px) {
@@ -590,13 +588,13 @@ ul li a {
     left: 70%;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) and (min-width: 1440px) {
   .restaurant-prev__text {
     top: -300px;
     left: 300px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 1024px) {
   .restaurant-prev__text {
     top: -260px;
     left: 200px;
@@ -608,12 +606,12 @@ ul li a {
     left: 200px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) and (min-width: 375px) {
   .restaurant-prev__text {
     left: 240px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (min-width: 320px) {
   .restaurant-prev__text {
     left: 180px;
   }
