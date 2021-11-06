@@ -6,14 +6,13 @@
     justify-content: flex-start;
     align-items: center;
     position: fixed;
+    height: 2600px;
+
     @include laptop-only{
         height: 1350px;
     }
     @include tablet-only{
-        height: 1200px;
-    }
-    @include mobile-only{
-        height: 2600px;
+        height: 1500px;
     }
     z-index: -1000;
     opacity: 0.7;

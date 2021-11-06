@@ -8,32 +8,29 @@
     }
 
     &--position{
+        right: 50px;
+        position: absolute;
+
 
         @include laptop-only{
-            position: absolute;
-            right: 1000px;
+            right: 100px;
         }
         @include tablet-only{
-            right: 350px;
-        }
-        @include mobile-only{
             right: 50px;
-       }
+        }
 
        &--index{
+        right: 3%;
+        position: absolute;
 
         @include laptop-only{
-            position: absolute;
             right: 50px;
         }
         @include tablet-only{
             right: 30px;
         }
-        @include mobile-only{
-            right: 3%;
-        }
 
-       }
+    }
     
 
     }
@@ -42,10 +39,7 @@
 
 }
 
-.fa-heart{
 
-
-}
 
 /*validation des menus*/
 .fa-check-circle{

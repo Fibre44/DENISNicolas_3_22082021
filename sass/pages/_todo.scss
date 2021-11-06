@@ -2,8 +2,15 @@
     position: relative;
     background-color: white;
     z-index: 1;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 0px;
+    @include flex-column;
+
     @include laptop-only{
-        @include flex-column;
         flex-wrap: wrap;
         height: 100px;
         width: 100%;
@@ -18,16 +25,6 @@
         margin-bottom: 10px;
         
     }
-    @include mobile-only{
-        flex-wrap: wrap;
-        height: 400px;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
-        margin-bottom: 0px;
- 
-    }
-
         
     &__title{
         align-self: flex-start;
@@ -36,6 +33,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 85%;
+
         @include shadow;
         @include laptop-only{
             width: 25%;
@@ -45,10 +44,7 @@
             width: 30%;
 
         }
-        @include mobile-only{
-            width: 85%;
 
-        }
         border-radius: 30px;
         height: 80px;
 
@@ -63,6 +59,7 @@
     &__number{
         border-radius: 50%;
         background-color: $primaire;
+        margin-left: -40px;
         @include laptop-only{
             @include number(laptop4k);
 
@@ -76,10 +73,6 @@
 
         }
 
-        @include mobile-only{
-            @include number(mobile);
-
-        }
         @include mobileS-only{
             @include number(mobileS);
 

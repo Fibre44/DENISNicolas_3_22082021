@@ -3,21 +3,21 @@
     flex-direction: column;    
 }
 
-
+/*
 @mixin mobile-only {
     @media screen and (max-width : map-get($breakpoints, mobile )){
         @content;
     }   
-}
+}*/
 
 @mixin tablet-only {
-    @media screen and (max-width : map-get($breakpoints, tablet )){
+    @media screen and (max-width : map-get($breakpoints, tablet )) and (min-width : map-get($breakpoints, tablet )){
         @content;
     }   
 }
 
 @mixin laptop-only {
-    @media screen and (max-width : map-get($breakpoints, laptop4k )){
+    @media all and (max-width : map-get($breakpoints, laptop4k )) and (min-width: map-get($breakpoints, laptop ) ){
         @content;
     }   
 }
@@ -64,15 +64,6 @@
     box-shadow: 1px 2px 8px 2px #c4c4c4;    
 }
 
-/*Gestion de la position des chiffres sur la page d'index. La boucle va chercher dans la variable number le nombre de pixel*/
-
-/*créer une variable $devices
-@mixin number ($devices) {
-    @each $state, $device in $devices {
-        margin-left: map-get($number, $device);
-                
-    }    
-}*/
 
 @mixin number ($device) {
         margin-left: map-get($number, $device);        

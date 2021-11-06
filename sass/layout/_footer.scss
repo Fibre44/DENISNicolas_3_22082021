@@ -2,33 +2,31 @@ footer {
     background-color: #353535;
     position: relative;
     color: white;
+    @include flex-column;
+    align-items: flex-start;
     
     z-index: 1;
     &__informations p {
       font-style: italic;
     }
-    @include mobile-only{
-      @include flex-column;
-      align-items: flex-start;
 
-    }
   }
 
-    ul {
+    ul {   
       @include laptop-only{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: row;   
         align-items: center;
+      };    
+      @include tablet-only{
+        flex-direction: row;   
+        align-items: center;
+      }   
+      @include flex-column;
+      justify-content: space-around;
+      align-items: flex-start;   
+      list-style-type: none;  
+      width: 90%;
 
-      };
-      @include mobile-only{
-        @include flex-column;
-        align-items: flex-start;
-        
-      };
-      list-style-type: none;
-  
       li {
         padding: 5px 0 5px 0;
         i{

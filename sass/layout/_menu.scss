@@ -1,26 +1,26 @@
 .menu-prev{
-    @include laptop-only{
-        @include flex-column;
-        justify-content: space-between;
-        align-content: space-between;
-        flex-wrap: nowrap;
-        width: 90%;        
-    }
+
+    @include flex-column;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    width: 90%; 
+    height: 80px;
   
     @include shadow;
 
     background-color: white;
     border-radius: 10px;
     width: 90%;
+    height: 80px;
+
     @include laptop-only{
         height: 100px;
     }
     @include tablet-only {
         height: 90px;
     }
-    @include mobile-only{
-        height: 80px;
-    }
+
     text-overflow: ellipsis;
     animation-name: menu-loader;
     animation-duration: 3000ms;
@@ -63,11 +63,14 @@
         align-items: center;
         justify-content: center;
         width: 30px;
+        height: 80px;
+        right: 5%;
+
+
         background-color: #99e2d0;
         & .fa-check-circle{
             transform: rotate(-180deg);
         }
-        right: 5%;
 
         @include laptop-only{
             height: 100px;
@@ -75,10 +78,6 @@
 
         @include tablet-only{
             height: 90px;
-        }
-        
-        @include mobile-only{
-            height: 80px;
         }
     }
 
